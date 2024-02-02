@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -127,7 +128,6 @@ public class CalendrierControlleur {
             Stage stage = (Stage) matchButton.getScene().getWindow();
             stage.close();
 
-            System.out.println("ok");
 
         }
 
@@ -197,10 +197,11 @@ public class CalendrierControlleur {
         Stage primaryStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("profile.fxml"));
         Scene scene = new Scene(fxmlLoader.load() , 700, 400);
+        Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+        primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Page de profil");
         primaryStage.setScene(scene);
         primaryStage.show();
-        System.out.println("ok");
     }
 
     public void gomtc(ActionEvent actionEvent) throws IOException {
@@ -209,10 +210,11 @@ public class CalendrierControlleur {
         Stage primaryStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("calendrier.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 900, 600);
+        Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+        primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Page de Calendrier ");
         primaryStage.setScene(scene);
         primaryStage.show();
-        System.out.println("ok");
     }
 
     public void gorslt(ActionEvent actionEvent) throws IOException {
@@ -221,10 +223,11 @@ public class CalendrierControlleur {
         Stage primaryStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("rdv.fxml"));
         Scene scene = new Scene(fxmlLoader.load() , 700, 400);
+        Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+        primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Page de RDV");
         primaryStage.setScene(scene);
         primaryStage.show();
-        System.out.println("ok");
     }
 
     public void gordv(ActionEvent actionEvent) throws IOException {
@@ -233,10 +236,11 @@ public class CalendrierControlleur {
         Stage primaryStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("rdv.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 700, 400);
+        Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+        primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Pade de RDV");
         primaryStage.setScene(scene);
         primaryStage.show();
-        System.out.println("ok");
     }
 
     public class Profile {

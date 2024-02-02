@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -68,10 +69,11 @@ public class ProfileController {
                 Stage primaryStage = new Stage();
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("resultat.fxml"));
                 Scene scene = new Scene(fxmlLoader.load(), 700, 400);
+                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                primaryStage.getIcons().add(icon);
                 primaryStage.setTitle("Resultat RDV");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
 
         }
         // goCalendrier doit fermer la fenetre actuelle et ouvrir la fenetre calendrier
@@ -83,10 +85,11 @@ public class ProfileController {
                 Stage primaryStage = new Stage();
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("calendrier.fxml"));
                 Scene scene = new Scene(fxmlLoader.load(), 900, 600);
+                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                primaryStage.getIcons().add(icon);
                 primaryStage.setTitle("Page de Match ");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
         }
 
 
@@ -96,10 +99,11 @@ public class ProfileController {
                 Stage primaryStage = new Stage();
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("rdv.fxml"));
                 Scene scene = new Scene(fxmlLoader.load(), 700, 400);
+                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                primaryStage.getIcons().add(icon);
                 primaryStage.setTitle("Pade de RDV");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
         }
 
         public void goProfile(ActionEvent actionEvent) throws IOException {
@@ -108,10 +112,11 @@ public class ProfileController {
                 Stage primaryStage = new Stage();
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("profile.fxml"));
                 Scene scene = new Scene(fxmlLoader.load(), 700, 400);
+                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                primaryStage.getIcons().add(icon);
                 primaryStage.setTitle("P R O F I L E");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
 
         }
 

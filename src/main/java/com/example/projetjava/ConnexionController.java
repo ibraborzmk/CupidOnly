@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
@@ -52,7 +53,6 @@ public class ConnexionController {
                 primaryStage.setTitle("I N S C R I P T I O N");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
         }
 
 
@@ -75,10 +75,11 @@ public class ConnexionController {
                                 Stage primaryStage = new Stage();
                                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("profile.fxml"));
                                 Scene scene = new Scene(fxmlLoader.load(), 700, 400);
+                                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                                primaryStage.getIcons().add(icon);
                                 primaryStage.setTitle("P R O F I L E");
                                 primaryStage.setScene(scene);
                                 primaryStage.show();
-                                System.out.println("ok");
                         } catch (IOException e) {
                                 e.printStackTrace();
                         }

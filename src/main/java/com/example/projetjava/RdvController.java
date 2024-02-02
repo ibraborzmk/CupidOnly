@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -83,10 +84,11 @@ public class RdvController {
         Stage primaryStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("profile.fxml"));
         Scene scene = new Scene(fxmlLoader.load() , 700, 400);
+        Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+        primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Page de profil");
         primaryStage.setScene(scene);
         primaryStage.show();
-        System.out.println("ok");
 
     }
 
@@ -97,10 +99,11 @@ public class RdvController {
         Stage primaryStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("rdv.fxml"));
         Scene scene = new Scene(fxmlLoader.load() , 700, 400);
+        Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+        primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Page de RDV");
         primaryStage.setScene(scene);
         primaryStage.show();
-        System.out.println("ok");
     }
 
     @FXML
@@ -110,10 +113,11 @@ public class RdvController {
         Stage primaryStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("resultat.fxml"));
         Scene scene = new Scene(fxmlLoader.load() , 700, 400);
+        Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+        primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Resultat de RDV");
         primaryStage.setScene(scene);
         primaryStage.show();
-        System.out.println("ok");
     }
 
     @FXML
@@ -123,10 +127,11 @@ public class RdvController {
         Stage primaryStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("calendrier.fxml"));
         Scene scene = new Scene(fxmlLoader.load() , 900, 600);
+        Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+        primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Page de Calendrier");
         primaryStage.setScene(scene);
         primaryStage.show();
-        System.out.println("ok");
     }
 
     public void goajout(ActionEvent actionEvent) {

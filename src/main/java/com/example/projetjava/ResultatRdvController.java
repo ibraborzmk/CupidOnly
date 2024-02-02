@@ -12,6 +12,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -66,10 +67,11 @@ public class ResultatRdvController {
                 Stage primaryStage = new Stage();
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("resultat.fxml"));
                 Scene scene = new Scene(fxmlLoader.load() , 700, 400);
+                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                primaryStage.getIcons().add(icon);
                 primaryStage.setTitle("Resulta de RDV");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
 
         }
         // goCalendrier doit fermer la fenetre actuelle et ouvrir la fenetre calendrier
@@ -81,10 +83,11 @@ public class ResultatRdvController {
                 Stage primaryStage = new Stage();
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("calendrier.fxml"));
                 Scene scene = new Scene(fxmlLoader.load() , 900, 600);
+                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                primaryStage.getIcons().add(icon);
                 primaryStage.setTitle("Page de Calendrier");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
         }
 
 
@@ -94,10 +97,11 @@ public class ResultatRdvController {
                 Stage primaryStage = new Stage();
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("rdv.fxml"));
                 Scene scene = new Scene(fxmlLoader.load() , 700, 400);
+                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                primaryStage.getIcons().add(icon);
                 primaryStage.setTitle("Page de RDV");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
         }
 
         public void goProfile(ActionEvent actionEvent) throws IOException {
@@ -106,10 +110,11 @@ public class ResultatRdvController {
                 Stage primaryStage = new Stage();
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("profile.fxml"));
                 Scene scene = new Scene(fxmlLoader.load() , 700, 400);
+                Image icon = new Image("file:///C:/Users/ibrah/OneDrive/Documents/2023 Cours/projetjava/src/main/java/icon.png");
+                primaryStage.getIcons().add(icon);
                 primaryStage.setTitle("P R O F I L E");
                 primaryStage.setScene(scene);
                 primaryStage.show();
-                System.out.println("ok");
 
         }
 

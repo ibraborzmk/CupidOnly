@@ -21,7 +21,7 @@
         <VBox prefHeight="400.0" prefWidth="158.0" style="-fx-background-color: #f1e9d1;">
             <children>
                 <Pane prefHeight="183.0" prefWidth="158.0" />
-                <Button fx:id="profileButton" alignment="CENTER" graphicTextGap="2.0" mnemonicParsing="false" onAction="#goProfile" prefHeight="50.0" prefWidth="158.0" style="-fx-background-color: #f1e9d1;" text="Profil" textFill="#49263d">
+                <Button fx:id="profileButton" alignment="CENTER" graphicTextGap="2.0" mnemonicParsing="false" onAction="#goProfile" prefHeight="50.0" prefWidth="158.0" style="-fx-background-color: #f1e9d1;" text="Profile" textFill="#49263d">
                     <font>
                         <Font size="14.0" />
                     </font>

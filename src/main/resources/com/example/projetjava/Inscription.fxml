@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="790.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjava.InscriptionControlleur">
+    <children>
+        <AnchorPane layoutX="-32.0" prefHeight="490.0" prefWidth="309.0" style="-fx-background-color: f1e9d1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-32.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <ImageView fitHeight="277.0" fitWidth="275.0" layoutX="35.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@Logo.jpg" />
+                  </image>
+              </ImageView>
+         </children></AnchorPane>
+          <TextField fx:id="Nomtxt" layoutX="395.0" layoutY="70.0" prefHeight="34.0" prefWidth="275.0" promptText="Dubois" />
+          <Button fx:id="btnSignup" layoutX="484.0" layoutY="371.0" mnemonicParsing="false" onAction="#goInscription" prefHeight="34.0" prefWidth="275.0" text="Inscription" />
+      <TextField fx:id="Prenomtxt" layoutX="395.0" layoutY="134.0" prefHeight="34.0" prefWidth="275.0" promptText="Martin" />
+      <TextField fx:id="Genretxt" layoutX="395.0" layoutY="199.0" prefHeight="34.0" prefWidth="275.0" promptText="Homme" />
+      <TextField fx:id="Mailtxt" layoutX="395.0" layoutY="261.0" prefHeight="34.0" prefWidth="275.0" promptText="martindubois@gmail.com" />
+      <Label layoutX="300.0" layoutY="87.0" text="Nom" />
+      <Label layoutX="300.0" layoutY="142.0" text="Prenom" />
+      <Label layoutX="305.0" layoutY="207.0" text="Genre" />
+      <Label layoutX="309.0" layoutY="269.0" text="Mail" />
+    <Label fx:id="lblErrors" alignment="CENTER" layoutX="305.0" layoutY="318.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354" />
+      <Button fx:id="connecte" layoutX="305.0" layoutY="405.0" mnemonicParsing="false" onAction="#goconnecte" prefHeight="23.0" prefWidth="119.0" text="Se connecter" />
+    </children>
+</AnchorPane>

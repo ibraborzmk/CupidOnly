@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="554.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjava.CalendrierControlleur">
+    <children>
+      <ImageView fitHeight="147.0" fitWidth="156.0" layoutX="370.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coeur-cupidon.png" />
+         </image>
+      </ImageView>
+        <GridPane layoutX="269.0" layoutY="98.0" prefHeight="450.0" prefWidth="502.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="198.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="291.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Label text="Profil 1" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label text="Profil 2" GridPane.columnIndex="1" />
+                <ImageView fx:id="profile1Image" fitHeight="92.0" fitWidth="97.0">
+                    <image>
+                        <Image url="@aphoto-homme.png" />
+                    </image></ImageView>
+                <Label text="Name:" GridPane.rowIndex="2" />
+                <Label text="Name:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Age:" GridPane.rowIndex="3" />
+                <Label text="Age:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="Location:" GridPane.rowIndex="4" />
+                <Label text="Location:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Hobbies:" GridPane.rowIndex="5" />
+                <Label text="Hobbies:" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="profile1Name" GridPane.rowIndex="2" />
+                <TextField fx:id="profile2Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="profile1Age" GridPane.rowIndex="3" />
+                <TextField fx:id="profile2Age" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="profile1Location" GridPane.rowIndex="4" />
+                <TextField fx:id="profile2Location" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextArea fx:id="profile1Hobbies" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5" />
+                <TextArea fx:id="profile2Hobbies" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Button fx:id="matchButton" mnemonicParsing="false" onAction="#goMatch" prefHeight="26.0" prefWidth="92.0" text="Match" GridPane.rowIndex="6" />
+                <Separator GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                <HBox alignment="CENTER" spacing="10.0" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+            <Button fx:id="idnextr" mnemonicParsing="false" onAction="#goNext" text="Next" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <ImageView fx:id="profile2Image" fitHeight="91.0" fitWidth="105.0" GridPane.columnIndex="1">
+                    <image>
+                        <Image url="@photo-femme.png" />
+                    </image>
+            </ImageView>
+            </children>
+        </GridPane>
+        <VBox prefHeight="600.0" prefWidth="158.0" style="-fx-background-color: #f1e9d1;">
+            <children>
+                <ImageView fitHeight="253.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Logo.jpg" />
+                    </image>
+                </ImageView>
+                <Pane prefHeight="443.0" prefWidth="158.0">
+                    <children>
+                        <Button fx:id="goProfile" layoutX="37.0" layoutY="58.0" mnemonicParsing="false" onAction="#goprofil" prefWidth="118.0" style="-fx-background-color: #f1e9d1;" text="Profil" textFill="#49263d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="goMatche" layoutX="54.0" layoutY="265.0" mnemonicParsing="false" onAction="#gomtc" style="-fx-background-color: #f1e9d1;" text="Match" textFill="#49263d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="goResultat" layoutX="37.0" layoutY="192.0" mnemonicParsing="false" onAction="#gorslt" style="-fx-background-color: #f1e9d1;" text="Resultat RDV" textFill="#49263d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="goRdv" layoutX="37.0" layoutY="120.0" mnemonicParsing="false" onAction="#gordv" style="-fx-background-color: #f1e9d1;" text="Rendez-vous" textFill="#49263d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </children>
+        </VBox>
+        <Text layoutX="213.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+        <Text layoutX="215.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" />
+        <Text layoutX="214.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ville" />
+        <Text layoutX="208.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centre d'interets" wrappingWidth="55.767578125" />
+    </children>
+</AnchorPane>
